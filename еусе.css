@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Анимации */
+
+/* Появление текста на главной странице */
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Увеличение кнопки при наведении */
+.zoom-in {
+    animation: zoomIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.hero {
+    background: url('hero-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.cta-btn {
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #ff6347;
+}
+
+/* Сетка для продуктов */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#best {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Анимация для карточек продуктов */
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.buy-btn {
+    display: inline-block;
+    background-color: #ff7f50;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.buy-btn:hover {
+    background-color: #ff6347;
+}
+
+/* Анимация для карточек */
+@keyframes bounce-in {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.bounce-in {
+    animation: bounce-in 1s ease-in-out;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Стили для страниц Shop, About, Contact */
+section {
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Дополнительные стили для других страниц */
+.shop-page, .about-page, .contact-page {
+    text-align: center;
+}
